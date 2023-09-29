@@ -1,0 +1,15 @@
+
+
+
+const limit = 0
+const offset = 0
+const url = `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}`
+
+//fetch url -  processamento assincrono - nao tenho a resposta de imediato - se der td certo
+
+
+fetch(url)
+    .then((response) => response.json())
+    .then((jsonBody) => console.log(jsonBody))
+    .catch((error) => console.error(error))
+

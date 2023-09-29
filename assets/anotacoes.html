@@ -1,0 +1,49 @@
+<!-- 
+    
+    Requisicao HTTP 
+
+URL: https://pokeapi.co/ap1/v2/pokemon?type=grass&name=i
+${Endereco}/${path = caminho de identificacao do recurso}
+
+Requests Method: GET | POST | PUT | DELETE | 
+
+
+GET - buscar
+queryString ou no proprio Path
+
+type = grass
+name = i
+
+https://pokeapi.co/ap/v2/pokemon?offset=4&limit=2
+
+>> Request Headers:
+    Configuracao da nossa API
+
+----------prioridades-------------
+    accept-languages
+
+    pt-br
+    pt; q = 0.9
+    en-US; q=0.8
+    en; q=0.7
+----------------------------------
+Autorization
+
+
+----------------------------------
+>> REQUEST BODY
+Dependendo do tipo da requisicao vale a pena enviar um codigo mais robusto . No POST, PUT o BODY faz <sentido>.
+    ex: Request Headers 
+    content-type: application/json
+
+    body {
+        "NAME";"teste"
+    }
+----------------------------------
+    Status code: fala oq aconteceu com a requisicao, voltando com um numero.
+----------------------------------
+>> Response Headers
+    Configuracao
+
+
+>> Response body
