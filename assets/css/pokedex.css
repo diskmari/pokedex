@@ -1,3 +1,15 @@
+
+
+.pokemon {
+    animation: fadeIn 1s ease-in;
+}
+
+
+.pokemon:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
 .pokemons {
     display: grid;
     grid-template-columns: 1fr;
